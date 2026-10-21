@@ -1,0 +1,45 @@
+name: T_gripper_cam[right_wrist]
+matrix:
+- - 0.00024297761521402595
+  - 0.6317376842255922
+  - 0.7751821974808013
+  - -0.08310792600894536
+- - 0.9999982237130597
+  - 0.0012953948209206397
+  - -0.0013691322006506475
+  - 0.0012038523479267163
+- - -0.0018690994097241176
+  - 0.7751811532032648
+  - -0.6317362473262497
+  - -0.06420173787447504
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+xyz_mm:
+- -83.10792600894536
+- 1.2038523479267162
+- -64.20173787447504
+rpy_deg:
+- 129.17841775789248
+- 0.10709157002230964
+- 89.9860783836773
+metadata:
+  date: '2026-10-14T00:56:52'
+  runs:
+  - samples/run_052
+  primary_solver: DANIILIDIS
+  setup: static table board, co-observation
+  consistency_gate_deg: 1.0
+  consistency_dropped:
+    right_wrist: 2
+  type: eye_in_hand
+  camera: right_wrist
+  arm: right
+  n_samples: 50
+  agreement_mm: 0.8489
+  agreement_deg: 0.2744
+  refined: true
+  refine_rms_px: 1.8369
+  refine_shift_mm: 2.211
+  refine_shift_deg: 0.1633

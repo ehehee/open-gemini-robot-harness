@@ -1,0 +1,28 @@
+# Both versions (run_human_check.py, run_auto_check.py). The autonomous checker
+# (gap_guard) needs only mujoco, already listed here.
+openai>=1.40.0          # Gemini via OpenRouter's OpenAI-compatible API
+pillow>=10.0.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+numpy>=1.24.0
+pyyaml>=6.0.0
+viser>=0.2.3
+mujoco>=3.3.5
+
+# Robot driver, FK/IK model and meshes. Not on PyPI. PINNED: i2rt ships the
+# arm + gripper MJCF the planner and gap_guard solve and collide against, so an
+# unpinned install could change link lengths or the grasp_site frame under the
+# solved extrinsics. Bump deliberately.
+i2rt @ git+https://github.com/i2rt-robotics/i2rt.git@120c3c81400171174604e503943f8d1ebc891058
+
+# --- real hardware only (install what your rig has) ---
+# pyrealsense2            # right-wrist D405
+# pyzed                   # overhead ZED-M: install from the ZED SDK, not PyPI
+# opencv-python           # --side-cam USB cameras, and video recording
+# TRI Stereo overhead depth (--zed-method tri_stereo, the default on the rig):
+#   git clone https://github.com/tri-ml/raiden third_party/raiden
+#   plus torch + onnxruntime-gpu (see raiden's docs/guide/tri_stereo.md)
+
+# --- optional ---
+# playwright>=1.45        # --record-viser; then: python -m playwright install chromium
+# pytest                  # tests/

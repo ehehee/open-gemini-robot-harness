@@ -1,0 +1,44 @@
+# Rig configuration for the bimanual YAM setup the case study ran on
+# (2026-10-15 clamp handover). Every value here is specific to that rig:
+# check each one on yours before connecting a real arm.
+#
+# Units: meters / radians, except where a key says _deg.
+#
+# No end-effector mass override is set: the recorded runs used i2rt's default
+# gravity compensation. A wrong ee_mass overcompensates and makes the arm
+# drift upward, so tune one (RealYamRobot(ee_mass=...)) on a stand first.
+
+arms:
+  left:
+    # CAN interface of this arm. gs_usb adapters are numbered in enumeration
+    # order, so confirm with `ip -br link show type can` and by moving the arm.
+    channel: can1
+    gripper_type: crank_4310
+    # [closed, open] jaw travel in motor-7 radians. Present = i2rt skips its
+    # connect-time jaw sweep (drives to both hard stops). Measure once with
+    #   python run_human_check.py --real --measure-left-gripper
+    # and re-measure after the gripper is reassembled or its motor re-zeroed:
+    # a wrong pair silently rescales every 0..1 jaw command. Delete the key if
+    # unsure.
+    gripper_limits: [0.08525978, -2.88681621]
+  right:
+    channel: can0
+    gripper_type: crank_4310
+    gripper_limits: [0.04825666, -2.91733425]
+
+# Per-joint encoder offsets, applied as q_model = q_encoder + delta before FK
+# and IK. They reconcile the motors' stored zero with the MuJoCo model's zero.
+# i2rt's driver does not apply them; yam_control/yam_backend.py does.
+# Invalidated by re-zeroing a motor: re-fit, don't carry them over.
+fk:
+  joint_offsets:
+    left:
+      delta_deg: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    right:
+      delta_deg: [0.0, 0.20, -0.17, -0.28, 1.46, 0.0]  # j5 is the real one: ~5.8 mm at the gripper
+
+cameras:
+  # The overhead ZED-M is opened as the first ZED the SDK finds; its pose is
+  # extrinsics/T_rightbase_overhead.yaml.
+  right_wrist:
+    serial: "218722271150"  # RealSense D405 on the right gripper; `rs-enumerate-devices` lists yours

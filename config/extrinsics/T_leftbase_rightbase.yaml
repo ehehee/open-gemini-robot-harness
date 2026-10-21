@@ -1,0 +1,80 @@
+name: T_leftbase_rightbase
+matrix:
+- - 0.9999335945313133
+  - -0.011523812995573545
+  - -9.089405893457883e-05
+  - 0.005836258721472767
+- - 0.011524139303272736
+  - 0.9998810716053637
+  - 0.010248749125028657
+  - -0.40077237430832
+- - -2.7221419305266495e-05
+  - -0.010249116027836555
+  - 0.9999474760604388
+  - 0.006905594185618924
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+xyz_mm:
+- 5.836258721472768
+- -400.77237430832
+- 6.905594185618924
+rpy_deg:
+- -0.5872413737261128
+- 0.0015596724387424352
+- 0.6602991606512335
+metadata:
+  derivation: T_leftbase_overhead @ inv(T_rightbase_overhead)
+  composed_by: scripts/compose_base_to_base.py
+  composed_at: '2026-09-08T22:30:42'
+  camera: overhead
+  camera_serial: '16347230'
+  sources:
+    left:
+      file: ./extrinsics/T_leftbase_overhead.yaml
+      runs:
+      - /home/shamakg/bosch-crate/yam-bimanual-calib/samples/run_044
+      n_captures: 29
+      method: DANIILIDIS
+      session_dates:
+        run_044: '2026-09-08T19:22:31'
+    right:
+      file: ./extrinsics/T_rightbase_overhead.yaml
+      runs:
+      - /home/shamakg/bosch-crate/yam-bimanual-calib/samples/run_050
+      n_captures: 30
+      method: DANIILIDIS
+      session_dates:
+        run_050: '2026-09-08T20:12:08'
+  total_rotation_deg: 0.8837
+  uncertainty:
+    input_sigma_trans_mm: 5.56
+    input_sigma_rot_deg: 0.74
+    input_sigma_basis: 'measured: the left extrinsic solved independently from run_043
+      and run_044 disagrees by 5.56 mm / 0.74 deg across a 25-hour gap. Used as a
+      conservative 1-sigma for BOTH inputs -- the right arm has only one run, so it
+      has no cross-session estimate of its own (its within-run bootstrap is ~1.4-1.7
+      mm/axis, a lower bound that cannot see session-to-session effects).'
+    trials: 20000
+    sigma_xyz_mm:
+    - 6.966
+    - 6.739
+    - 4.984
+    sigma_magnitude_mm: 4.383
+    sigma_rotation_deg: 0.4082
+    significance_sigma:
+      x: 0.84
+      y: 59.47
+      z: 1.39
+      rotation: 2.16
+    note: 'Rotation error is amplified by the ~470 mm base-to-camera lever arm. Read
+      significance_sigma before quoting any component: anything under ~2 sigma is
+      consistent with zero and must NOT be reported as a measured offset. Only the
+      y separation clears that bar here; x, z and the residual rotation do not.'
+  assumption: REQUIRES the camera to have been in the same pose for both solves; it
+    cancels only under that condition. Not enforced by any gate -- each extrinsic
+    stays individually valid if it is violated. Checked here via the run_043/run_044
+    cross-session agreement above. To remove the assumption, capture both arms in
+    ONE session with the camera untouched, or add a bench-fixed second board so camera
+    motion becomes observable.
