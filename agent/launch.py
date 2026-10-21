@@ -14,7 +14,9 @@ frame. Each skill expands into segments that are IK-solved, then checked:
                    back to Gemini. viser still shows everything, and its Stop
                    button still stops the session.
 
-Defaults to i2rt's MuJoCo sim for BOTH arms. --real needs the left arm's
+Without --real, both arms run in a RoboSimStudio scene (--scene; sim/rss_backend.py):
+physics, rendered overhead and wrist cameras, the same driver code above the
+CAN layer. Needs RoboSimStudio installed (see README). --real needs the left arm's
 gripper_limits in config/rig.yaml first: without them every connect runs
 i2rt's jaw sweep on the left gripper (drives it shut, then fully open).
 Measure them once with --real --measure-left-gripper.
@@ -55,8 +57,8 @@ from camera.rig_calibration import (
     arm_joint_offsets_rad,
     camera_serial,
     config_files,
+    config_dir,
     load_extrinsic,
-    load_overhead_intrinsics,
 )
 from camera.zed_overhead import OverheadFrame
 from vlm.gemini_client import DEFAULT_MODEL
@@ -65,12 +67,11 @@ from yam_control.yam_backend import RealYamRobot
 
 logging.basicConfig(level=logging.WARNING, format="%(message)s")
 RUNS = Path(__file__).resolve().parents[1] / "runs"
+DEFAULT_SCENE = Path(__file__).resolve().parents[1] / "sim" / "scenes" / "scene_7010_v2" / "scene.py"
 
 
-def _arm_kwargs(side: str, sim: bool) -> dict:
+def _arm_kwargs(side: str) -> dict:
     # ee_mass deliberately not passed: see config/rig.yaml.
-    if sim:
-        return {"channel": "can0", "gripper_type": "crank_4310", "sim": True}
     return {"channel": arm_channel(side), "gripper_type": arm_gripper_type(side), "sim": False,
             "gripper_limits": arm_gripper_limits(side), "joint_offsets_rad": arm_joint_offsets_rad(side)}
 
@@ -85,15 +86,15 @@ def main(checker: str) -> None:
     }[checker])
     ap.add_argument("--task", default="Pick up the clamp with the arm closest to it, hand it over to the other arm, "
                                       "then place the clamp inside the blue bin.")
-    ap.add_argument("--real", action="store_true", help="drive BOTH real arms instead of i2rt's sim")
+    ap.add_argument("--real", action="store_true", help="drive BOTH real arms instead of the RoboSimStudio sim")
+    ap.add_argument("--scene", type=Path, default=DEFAULT_SCENE,
+                    help="RoboSimStudio live scene.py to simulate (default: %(default)s)")
     ap.add_argument("--measure-left-gripper", action="store_true",
                     help="connect the left arm once so i2rt measures its jaw travel (the jaws WILL sweep), "
                          "print the pair to put in config/rig.yaml, and exit")
     ap.add_argument("--replay", help="captures/*.npz overhead frame instead of the live ZED")
     ap.add_argument("--zed-method", default="tri_stereo", choices=["tri_stereo", "zed"],
                     help="overhead depth: TRI Stereo learned depth (third_party/raiden) or the ZED SDK's")
-    ap.add_argument("--zed-in-sim", action="store_true",
-                    help="sim arms with the live overhead ZED (default in sim: a synthetic frame)")
     ap.add_argument("--serve-only", action="store_true")
     ap.add_argument("--max-turns", type=int, default=40)
     ap.add_argument("--max-tokens", type=int, default=12000,
@@ -127,7 +128,7 @@ def main(checker: str) -> None:
     sim = not args.real
 
     if args.measure_left_gripper:
-        kw = _arm_kwargs("left", sim=False)
+        kw = _arm_kwargs("left")
         kw["gripper_limits"] = None
         print("[measure] connecting the LEFT arm -- the gripper will close fully, then open fully. "
               "Keep the jaws empty.")
@@ -148,8 +149,16 @@ def main(checker: str) -> None:
             sys.exit("Not started.")
     run_dir = RUNS / (f"bimanual_{checker}_" + time.strftime("%Y%m%d_%H%M%S"))
     run_dir.mkdir(parents=True)
-    print("[sim] both arms in i2rt's MuJoCo sim -- no CAN traffic." if sim else
-          "[REAL] both arms. E-stops in reach? Workspace clear between the arms?")
+    hub = None
+    if sim:
+        from sim import rss_backend
+
+        print(f"[sim] building RoboSimStudio scene {args.scene} (a minute or two the first time)...")
+        hub, _sim_stop = rss_backend.start(args.scene, config_dir(), run_dir / "sim_config")
+        os.environ["RIG_CONFIG_DIR"] = str(run_dir / "sim_config")  # the scene's arm placement
+        print(f"[sim] stepping at {1 / hub.dt:.0f} Hz control; arms and cameras are simulated")
+    else:
+        print("[REAL] both arms. E-stops in reach? Workspace clear between the arms?")
 
     cams = []
     recorder = None
@@ -168,11 +177,15 @@ def main(checker: str) -> None:
     try:
         # Real arms: i2rt in their own processes, so nothing here (camera/ML
         # start-up, viser, Gemini) can starve their control loops -- see process_robot.py.
-        robot_cls = RealYamRobot if sim else ProcessYamRobot
+        if sim:
+            SimYamRobot = rss_backend.sim_robot_class()
+            xml = str(rss_backend.i2rt_arm_xml(run_dir / "i2rt_arm.xml"))
+            make = {side: (lambda side=side: SimYamRobot(hub, side, xml)) for side in ARMS}
+        else:
+            make = {side: (lambda side=side: ProcessYamRobot(**_arm_kwargs(side))) for side in ARMS}
         # The ExitStack is exited first, i.e. before either arm is released --
         # the state logger must stop reading the arms before they disconnect.
-        with robot_cls(**_arm_kwargs("right", sim)) as right, robot_cls(**_arm_kwargs("left", sim)) as left, \
-                contextlib.ExitStack() as before_release:
+        with make["right"]() as right, make["left"]() as left, contextlib.ExitStack() as before_release:
             robots = {"left": left, "right": right}
             time.sleep(1.0)
             for name, r in robots.items():
@@ -186,12 +199,10 @@ def main(checker: str) -> None:
             if args.replay:
                 frame = OverheadFrame.load(Path(args.replay))
                 grab_overhead = lambda: frame  # noqa: E731
-            elif sim and not args.zed_in_sim:
-                from camera.synthetic_overhead import synthetic_overhead
-
-                frame = synthetic_overhead(load_extrinsic("T_rightbase_overhead"), load_overhead_intrinsics())
-                grab_overhead = lambda: frame  # noqa: E731
-                print("[obs] sim: synthetic overhead frame (table + red block); --zed-in-sim for the real camera")
+            elif sim:
+                cam = rss_backend.SimOverhead(hub)
+                grab_overhead = cam.grab
+                cams.append(cam)
             else:
                 from camera.zed_overhead import OverheadCamera
 
@@ -201,6 +212,8 @@ def main(checker: str) -> None:
 
             observer = Observer(load_extrinsic("T_rightbase_overhead"),
                                 Workspace(x=(0.12, 0.60), y=(-0.35, 0.75), z=(-0.20, 0.45)))
+            if sim:  # everything that drives an arm runs on sim time
+                Primitives.execute = rss_backend.sim_clocked(Primitives.execute)
             arms = {}
             for name in ARMS:
                 arms[name] = Primitives(robots[name], np.array(robots[name].get_joint_positions()),
@@ -213,7 +226,9 @@ def main(checker: str) -> None:
             if checker == "auto":
                 from agent.gap_checker import AutoCheckViewer, GapChecker
 
-                gap = GapChecker(arms, T_world_left, run_dir)
+                # In sim the scene's own wrist cameras and cable are known: check them too.
+                gap = GapChecker(arms, T_world_left, run_dir,
+                                 gripper_parts=hub.gripper_parts(run_dir / "sim_parts") if sim else None)
                 viewer = AutoCheckViewer(server, arms, gap, real=args.real)
             else:
                 viewer = BimanualViewer(server, arms, real=args.real)
@@ -223,9 +238,12 @@ def main(checker: str) -> None:
             wrist_cam = wrist_view = None
             if not args.no_wrist:
                 try:
-                    from camera.d405_wrist import WristCamera
+                    if sim:
+                        wrist_cam = rss_backend.SimWristCamera(hub)
+                    else:
+                        from camera.d405_wrist import WristCamera
 
-                    wrist_cam = WristCamera(serial=camera_serial("right_wrist"), depth=True)
+                        wrist_cam = WristCamera(serial=camera_serial("right_wrist"), depth=True)
                     cams.append(wrist_cam)
                 except Exception as e:  # noqa: BLE001 -- run on without it rather than not at all
                     print(f"[wrist] NOT using the right wrist camera: {e}")
@@ -271,7 +289,7 @@ def main(checker: str) -> None:
                 print(f"[state] logging both arms at {args.state_hz:g} Hz -> {state_log.path}")
             # Continuous camera video (agent/cam_recorder.py), same clock as the logs.
             rec_sources = {}
-            if any(c.__class__.__name__ == "OverheadCamera" for c in cams):
+            if any(c.__class__.__name__ in ("OverheadCamera", "SimOverhead") for c in cams):
                 rec_sources["overhead"] = cams[0].grab_rgb
             if wrist_cam is not None:
                 rec_sources["right_wrist"] = wrist_cam.grab_rgb

@@ -1,0 +1,542 @@
+[
+  {
+    "path": "0000.obj",
+    "color": [
+      0.67,
+      0.61,
+      0.47
+    ],
+    "metallic": 0,
+    "roughness": 0.85,
+    "collision": true,
+    "label": "cardboard_core_edge"
+  },
+  {
+    "path": "0001.obj",
+    "color": [
+      0.16,
+      0.36,
+      0.7
+    ],
+    "metallic": 0,
+    "roughness": 0.85,
+    "collision": true,
+    "label": "wound_masking_tape"
+  },
+  {
+    "path": "0002.obj",
+    "color": [
+      0.85,
+      0.85,
+      0.77
+    ],
+    "metallic": 0,
+    "roughness": 0.85,
+    "collision": false,
+    "label": "white_printed_core_liner"
+  },
+  {
+    "path": "0003.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0004.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0005.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0006.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0007.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0008.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0009.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0010.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0011.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0012.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0013.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0014.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0015.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0016.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0017.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0018.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0019.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0020.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0021.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0022.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0023.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0024.obj",
+    "color": [
+      0.19,
+      0.39,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "fine_paper_winding_edge"
+  },
+  {
+    "path": "0025.obj",
+    "color": [
+      0.65,
+      0.54,
+      0.12
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0026.obj",
+    "color": [
+      0.12,
+      0.12,
+      0.09
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0027.obj",
+    "color": [
+      0.65,
+      0.54,
+      0.12
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0028.obj",
+    "color": [
+      0.12,
+      0.12,
+      0.09
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0029.obj",
+    "color": [
+      0.65,
+      0.54,
+      0.12
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0030.obj",
+    "color": [
+      0.12,
+      0.12,
+      0.09
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0031.obj",
+    "color": [
+      0.65,
+      0.54,
+      0.12
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0032.obj",
+    "color": [
+      0.12,
+      0.12,
+      0.09
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0033.obj",
+    "color": [
+      0.65,
+      0.54,
+      0.12
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0034.obj",
+    "color": [
+      0.12,
+      0.12,
+      0.09
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0035.obj",
+    "color": [
+      0.65,
+      0.54,
+      0.12
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0036.obj",
+    "color": [
+      0.12,
+      0.12,
+      0.09
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0037.obj",
+    "color": [
+      0.65,
+      0.54,
+      0.12
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0038.obj",
+    "color": [
+      0.12,
+      0.12,
+      0.09
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0039.obj",
+    "color": [
+      0.65,
+      0.54,
+      0.12
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0040.obj",
+    "color": [
+      0.12,
+      0.12,
+      0.09
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0041.obj",
+    "color": [
+      0.65,
+      0.54,
+      0.12
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0042.obj",
+    "color": [
+      0.12,
+      0.12,
+      0.09
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0043.obj",
+    "color": [
+      0.65,
+      0.54,
+      0.12
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  },
+  {
+    "path": "0044.obj",
+    "color": [
+      0.12,
+      0.12,
+      0.09
+    ],
+    "metallic": 0,
+    "roughness": 0.9,
+    "collision": false,
+    "label": "repeating_core_print"
+  }
+]

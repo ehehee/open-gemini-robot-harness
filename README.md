@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://developers.googleblog.com/gemini-4-argon-for-robotics/"><img src="https://img.shields.io/badge/Based%20on-Gemini%204%20Argon%20for%20Robotics-4285F4" alt="Based on Gemini 4 Argon for Robotics"></a>
   <a href="#how-it-works"><img src="https://img.shields.io/badge/Docs-How%20it%20works-FBBC04" alt="How it works"></a>
-  <a href="#in-simulation-no-hardware"><img src="https://img.shields.io/badge/Try%20it-MuJoCo%20sim%2C%20no%20hardware-0F766E" alt="Try it in sim"></a>
+  <a href="#in-simulation-robosimstudio"><img src="https://img.shields.io/badge/Try%20it-RoboSimStudio%20sim-0F766E" alt="Try it in the RoboSimStudio sim"></a>
   <img src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white" alt="Python 3.12">
 </p>
 
@@ -48,7 +48,8 @@ with no task-specific training or demonstrations. The final clamp run took
 collision) using only short feedback, and had no drops.
 
 The release supports **human-checked and automatically checked execution**,
-**both arms in one world frame**, **i2rt's MuJoCo sim and the real rig**, and
+**both arms in one world frame**, **a physics sim of the bench in
+[RoboSimStudio](https://github.com/robosimstudio/robosimstudio) and the real rig**, and
 **full run records with an HTML report**.
 
 The harness comes in **two versions**. They differ only in who checks each
@@ -180,8 +181,10 @@ behind it, is logged to `runs/<stamp>/gap_checks.jsonl` and shown in a viser
 panel.
 
 It does **not** model the held object (points within 10 cm of a holding
-gripper are dropped from the cloud), the left wrist camera (no CAD), or
-anything the overhead camera cannot see. Meshes collide as convex hulls, which
+gripper are dropped from the cloud) or anything the overhead camera cannot
+see. On the rig it also does not model the left wrist camera, since there's no
+CAD for it. In the sim the scene's own wrist cameras and cable are added
+(`RssSim.gripper_parts`), so nothing on a gripper is mistaken for an obstacle. Meshes collide as convex hulls, which
 errs toward `COLLISION` in concave spots. It also cannot tell whether a
 receiving grasp will hold once the giver lets go. The handover protocol in the
 prompt (observe before release, recheck holding) still covers that.
@@ -190,8 +193,13 @@ prompt (observe before release, recheck holding) still covers that.
 
 Python 3.12 (i2rt's `ruckig` dependency did not build on 3.10 here).
 
+For the simulation, install
+[RoboSimStudio](https://github.com/robosimstudio/robosimstudio) first, following
+its own installation guide (it needs a CUDA GPU). Then add this harness's
+requirements to **the same environment**:
+
 ```bash
-python3.12 -m venv .venv && source .venv/bin/activate
+# inside RoboSimStudio's environment (or a fresh python3.12 venv for the rig only)
 pip install -r requirements.txt
 cp .env.example .env        # set OPENROUTER_API_KEY
 ```
@@ -206,29 +214,68 @@ TRI Stereo from [raiden](https://github.com/tri-ml/raiden) cloned into
 
 ## Run
 
-### In simulation (no hardware)
+### In simulation (RoboSimStudio)
 
-Both arms run in i2rt's MuJoCo sim. The overhead image is a synthetic
-table-and-block frame, ray-cast through the real calibrated camera pose
-(`camera/synthetic_overhead.py`), so the grid, deprojection and collision cloud
-line up with the arms.
+Without `--real`, both arms run in a physics simulation of the case-study
+bench: `sim/scenes/scene_7010_v2`, a RoboSimStudio reconstruction of the
+clamp-handover recording. It has the same props, the two YAM arms from i2rt's
+CAD, and contact-driven fingers. `sim/rss_backend.py` adds two cameras to the
+scene:
+
+- the overhead camera, at the calibrated `T_rightbase_overhead`;
+- the right-wrist D405, at `T_right_wrist_gripper_cam`.
+
+Above the CAN layer the robot driver is the same code that runs the real arms,
+including streaming, close-until-contact and the stall guards. The harness's
+planning model agrees with the scene's arms to 0.04 mm at the gripper. Any
+RoboSimStudio live scene with two YAM arms named `right` and `left` works: pass
+it with `--scene path/to/scene.py`.
 
 ```bash
-python run_auto_check.py  --task "Pick up the red block with the right arm and lift it 10 cm."
-python run_human_check.py --task "Pick up the red block with the right arm and lift it 10 cm."
+python run_auto_check.py  --task "Pick up the clamp with the arm closest to it, hand it over to the other arm, then place the clamp inside the blue bin."
+python run_human_check.py --task "..."
 ```
 
-Open the printed viser URL (default http://localhost:8090) to watch, or, in the
-human version, to approve each step. The sim has no physical block, so a grasp
-closes on air and reports `grasp_failed`. That is expected.
+The first build takes a minute or two. Then open the printed viser URL
+(default http://localhost:8090) to watch, or, in the human version, to approve
+each step.
 
-To drive `/plan` yourself without Gemini:
+**Check that a good grasp really grasps.** `tools/scripted_grasp.py` runs the
+harness without Gemini. It computes a grasp from the clamp's mesh: the jaws
+centred on the straight part of the rubber sleeve, closing across it. It then
+sends that grasp as the `/plan` program Gemini would write, with `gap_guard`
+checking every step, and verifies in physics that the clamp comes up with the
+gripper and stays in the jaws:
+
+```console
+$ python tools/scripted_grasp.py
+[grasp] clamp/0008.obj: centre (0.3245, 0.0482, 0.0179) in the right-arm base frame, long axis -21.5 deg -> pinch z 0.0109, jaws at 68.5 deg
+  [gap_guard] [right] grasp: open gripper                                  OK
+  [gap_guard] [right] grasp: above target (+0.08 m)                        OK
+  [gap_guard] [right] grasp: descend to z=0.011                            OK
+  [gap_guard] [right] grasp: close until contact                           OK
+  [gap_guard] [right] grasp: lift                                          OK
+[plan] right.grasp(x=0.3245, y=0.0482, z=0.0109, yaw_deg=68.5)  -> completed
+   [right] grasp: open gripper                      [right] gripper -> 1.00
+   [right] grasp: above target (+0.08 m)            [right] reached, measured 0.0 mm from plan (gravity sag)
+   [right] grasp: descend to z=0.011                [right] reached, measured 8.1 mm from plan (gravity sag)
+   [right] grasp: close until contact               [right] contact=True, gripper=0.26, holding=True
+   [right] grasp: lift                              [right] reached, measured 0.8 mm from plan (gravity sag)
+  [gap_guard] [right] move_by fwd=+0.000 left=+0.000 dz=+0.040             OK
+[plan] right.move_by(dz=0.040, speed=0.04)  -> completed
+   [right] move_by fwd=+0.000 left=+0.000 dz=+0.040 [right] reached, measured 0.8 mm from plan (gravity sag)
+[result] holding=True  gripper_open=0.256  clamp rose 118.6 mm with the gripper lifted 120 mm, after 2 s held  -> GRASPED AND LIFTED
+```
+
+The grasp pose comes from the sim's ground truth. So this tests everything
+below the model (skills, IK, checking, execution, gripper, contact physics),
+not Gemini's perception. To drive `/plan` yourself without Gemini:
 
 ```bash
 python run_auto_check.py --serve-only
 curl -s http://127.0.0.1:8081/obs
-printf 'right.goto(x=0.38, y=0.05, z=0.03, pitch_deg=90)\n' | \
-  curl -s -X POST http://127.0.0.1:8081/plan --data-binary @-   # into the block -> COLLISION
+printf 'right.grasp(x=0.3245, y=0.0482, z=0.0109, yaw_deg=68.5)\n' | \
+  curl -s -X POST http://127.0.0.1:8081/plan --data-binary @-
 ```
 
 ### On the rig
@@ -277,11 +324,18 @@ images it saw.
 pip install pytest && pytest tests/
 ```
 
-The tests run against i2rt's sim and need no API key. They check that the two
-prompts differ only in the operator passages, that the synthetic frame
-deprojects correctly, and that the automatic checker returns `OK` over open
-table, `COLLISION` for fingertips driven into the block and for one gripper
-driven into the other arm, and `IK_FAILURE` for an unreachable target.
+The tests build the RoboSimStudio scene once (about 2.5 minutes in all) and
+need no API key. They check:
+
+- that the two prompts differ only in the operator passages;
+- that the overhead camera finds the table where the scene puts it;
+- that the automatic checker returns `IK_FAILURE` for an unreachable target;
+- that it returns `COLLISION` for one gripper driven into the other arm and for
+  fingertips driven down onto the clamp's frame;
+- that it lets the left arm move out and return home;
+- that the scripted grasp lifts the clamp and holds it.
+
+Without RoboSimStudio installed, only the prompt test runs.
 
 ## Layout
 
@@ -297,11 +351,15 @@ agent/wrist_view.py     calibrated wrist overlay + cloud
 agent/plan_program.py   restricted program parser
 agent/robot_server.py   GET /obs, POST /plan
 agent/run_log.py, state_logger.py, cam_recorder.py, viser_screen.py   run records
-gap_guard/              MuJoCo collision scene + fingertip convex pieces
-camera/                 ZED overhead, D405 wrist, extrinsics, calibration loader, synthetic frame
+gap_guard/              MuJoCo collision scene + fingertip convex pieces (the checker, not the simulator)
+sim/rss_backend.py      RoboSimStudio as the simulator: scene + cameras, sim arms under RealYamRobot
+sim/procedures.py       the harness in the sim without Gemini; the scripted grasp
+sim/scenes/scene_7010_v2/   the case-study bench, reconstructed in RoboSimStudio
+camera/                 ZED overhead, D405 wrist, extrinsics, calibration loader
 yam_control/            i2rt-backed arm driver (FK/IK, streaming, guards), per-arm process
 viz/                    robot meshes in viser
 config/                 rig.yaml + solved extrinsics of the case-study rig
+tools/scripted_grasp.py a geometry-computed grasp through the harness, verified in physics
 tools/run_report.py     HTML report of a run
 ```
 

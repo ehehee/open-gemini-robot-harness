@@ -1,0 +1,86 @@
+[
+  {
+    "path": "0000.obj",
+    "color": [
+      0.57,
+      0.59,
+      0.56
+    ],
+    "metallic": 0.88,
+    "roughness": 0.4,
+    "collision": true,
+    "label": "continuous_forged_head_curved_claw_depth_slot"
+  },
+  {
+    "path": "0001.obj",
+    "color": [
+      0.035,
+      0.039,
+      0.038
+    ],
+    "metallic": 0,
+    "roughness": 0.65,
+    "collision": true,
+    "label": "traced_molded_grip"
+  },
+  {
+    "path": "0002.obj",
+    "color": [
+      0.85,
+      0.19,
+      0.07
+    ],
+    "metallic": 0,
+    "roughness": 0.55,
+    "collision": true,
+    "label": "flush_orange_collar"
+  },
+  {
+    "path": "0003.obj",
+    "color": [
+      0.84,
+      0.2,
+      0.075
+    ],
+    "metallic": 0,
+    "roughness": 0.65,
+    "collision": false,
+    "label": "recessed_orange_inlay"
+  },
+  {
+    "path": "0004.obj",
+    "color": [
+      0.84,
+      0.2,
+      0.075
+    ],
+    "metallic": 0,
+    "roughness": 0.65,
+    "collision": false,
+    "label": "recessed_orange_inlay"
+  },
+  {
+    "path": "0005.obj",
+    "color": [
+      0.84,
+      0.2,
+      0.075
+    ],
+    "metallic": 0,
+    "roughness": 0.65,
+    "collision": false,
+    "label": "round_inlay"
+  },
+  {
+    "path": "0006.obj",
+    "color": [
+      0.29,
+      0.3,
+      0.28
+    ],
+    "metallic": 0.8,
+    "roughness": 0.45,
+    "collision": false,
+    "label": "stamped_head_mark"
+  }
+]

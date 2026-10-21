@@ -1,0 +1,6662 @@
+[
+  {
+    "path": "0000.obj",
+    "color": [
+      0.58,
+      0.6,
+      0.44
+    ],
+    "metallic": 0,
+    "roughness": 0.55,
+    "collision": true,
+    "label": "tapered_cup_wall"
+  },
+  {
+    "path": "0001.obj",
+    "color": [
+      0.57,
+      0.54,
+      0.43
+    ],
+    "metallic": 0,
+    "roughness": 0.6,
+    "collision": true,
+    "label": "cup_bottom"
+  },
+  {
+    "path": "0002.obj",
+    "color": [
+      0.68,
+      0.68,
+      0.56
+    ],
+    "metallic": 0.1,
+    "roughness": 0.22,
+    "collision": true,
+    "label": "clear_lid_rim"
+  },
+  {
+    "path": "0003.obj",
+    "color": [
+      0.68,
+      0.68,
+      0.56
+    ],
+    "metallic": 0.1,
+    "roughness": 0.22,
+    "collision": true,
+    "label": "clear_lid_rim"
+  },
+  {
+    "path": "0004.obj",
+    "color": [
+      0.55,
+      0.025,
+      0.055
+    ],
+    "metallic": 0,
+    "roughness": 0.4,
+    "collision": true,
+    "label": "red_straw"
+  },
+  {
+    "path": "0005.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0006.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0007.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0008.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0009.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0010.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0011.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0012.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0013.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0014.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0015.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0016.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0017.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0018.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0019.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0020.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0021.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0022.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0023.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0024.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0025.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0026.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0027.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0028.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0029.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0030.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0031.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0032.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0033.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0034.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0035.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0036.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0037.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0038.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0039.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0040.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0041.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0042.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0043.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0044.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0045.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0046.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0047.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0048.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0049.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0050.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0051.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0052.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0053.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0054.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0055.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0056.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0057.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0058.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0059.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0060.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0061.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0062.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0063.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0064.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0065.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0066.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0067.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0068.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0069.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0070.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0071.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0072.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0073.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0074.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0075.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0076.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0077.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0078.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0079.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0080.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0081.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0082.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0083.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0084.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0085.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0086.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0087.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0088.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0089.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0090.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0091.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0092.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0093.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0094.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0095.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0096.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0097.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0098.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0099.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0100.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0101.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0102.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0103.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0104.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0105.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0106.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0107.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0108.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0109.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0110.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0111.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0112.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0113.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0114.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0115.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0116.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0117.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0118.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0119.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0120.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0121.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0122.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0123.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0124.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0125.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0126.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0127.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0128.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0129.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0130.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0131.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0132.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0133.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0134.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0135.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0136.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0137.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0138.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0139.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0140.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0141.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0142.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0143.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0144.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0145.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0146.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0147.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0148.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0149.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0150.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0151.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0152.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0153.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0154.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0155.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0156.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0157.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0158.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0159.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0160.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0161.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0162.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0163.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0164.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0165.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0166.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0167.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0168.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0169.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0170.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0171.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0172.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0173.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0174.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0175.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0176.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0177.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0178.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0179.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0180.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0181.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0182.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0183.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0184.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0185.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0186.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0187.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0188.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0189.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0190.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0191.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0192.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0193.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0194.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0195.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0196.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0197.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0198.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0199.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0200.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0201.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0202.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0203.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0204.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0205.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0206.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0207.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0208.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0209.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0210.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0211.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0212.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0213.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0214.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0215.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0216.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0217.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0218.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0219.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0220.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0221.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0222.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0223.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0224.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0225.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0226.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0227.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0228.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0229.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0230.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0231.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0232.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0233.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0234.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0235.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0236.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0237.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0238.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0239.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0240.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0241.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0242.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0243.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0244.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0245.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0246.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0247.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0248.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0249.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0250.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0251.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0252.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0253.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0254.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0255.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0256.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0257.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0258.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0259.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0260.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0261.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0262.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0263.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0264.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0265.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0266.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0267.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0268.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0269.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0270.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0271.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0272.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0273.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0274.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0275.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0276.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0277.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0278.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0279.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0280.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0281.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0282.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0283.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0284.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0285.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0286.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0287.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0288.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0289.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0290.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0291.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0292.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0293.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0294.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0295.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0296.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0297.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0298.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0299.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0300.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0301.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0302.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0303.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0304.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0305.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0306.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0307.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0308.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0309.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0310.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0311.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0312.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0313.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0314.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0315.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0316.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0317.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0318.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0319.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0320.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0321.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0322.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0323.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0324.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0325.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0326.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0327.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0328.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0329.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0330.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0331.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0332.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0333.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0334.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0335.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0336.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0337.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0338.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0339.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0340.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0341.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0342.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0343.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0344.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0345.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0346.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0347.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0348.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0349.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0350.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0351.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0352.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0353.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0354.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0355.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0356.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0357.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0358.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0359.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0360.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0361.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0362.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0363.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0364.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0365.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0366.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0367.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0368.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0369.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0370.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0371.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0372.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0373.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0374.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0375.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0376.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0377.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0378.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0379.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0380.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0381.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0382.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0383.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0384.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0385.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0386.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0387.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0388.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0389.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0390.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0391.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0392.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0393.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0394.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0395.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0396.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0397.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0398.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0399.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0400.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0401.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0402.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0403.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0404.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0405.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0406.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0407.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0408.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0409.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0410.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0411.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0412.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0413.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0414.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0415.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0416.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0417.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0418.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0419.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0420.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0421.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0422.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0423.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0424.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0425.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0426.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0427.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0428.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0429.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0430.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0431.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0432.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0433.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0434.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0435.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0436.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0437.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0438.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0439.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0440.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0441.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0442.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0443.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0444.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0445.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0446.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0447.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0448.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0449.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0450.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0451.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0452.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0453.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0454.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0455.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0456.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0457.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0458.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0459.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0460.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0461.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0462.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0463.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0464.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0465.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0466.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0467.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0468.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0469.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0470.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0471.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0472.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0473.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0474.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0475.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0476.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0477.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0478.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0479.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0480.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0481.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0482.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0483.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0484.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0485.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0486.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0487.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0488.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0489.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0490.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0491.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0492.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0493.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0494.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0495.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0496.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0497.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0498.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0499.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0500.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0501.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0502.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0503.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0504.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0505.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0506.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0507.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0508.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0509.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0510.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0511.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0512.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0513.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0514.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0515.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0516.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0517.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0518.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0519.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0520.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0521.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0522.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0523.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0524.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0525.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0526.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0527.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0528.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0529.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0530.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0531.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0532.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0533.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0534.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0535.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0536.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0537.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0538.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0539.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0540.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0541.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0542.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0543.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0544.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0545.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0546.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0547.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0548.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0549.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0550.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0551.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0552.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0553.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  },
+  {
+    "path": "0554.obj",
+    "color": [
+      0.87,
+      0.86,
+      0.73
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "floral_sleeve"
+  }
+]

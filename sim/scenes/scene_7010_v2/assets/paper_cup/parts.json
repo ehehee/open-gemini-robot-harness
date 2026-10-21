@@ -1,0 +1,62 @@
+[
+  {
+    "path": "0000.obj",
+    "color": [
+      0.56,
+      0.53,
+      0.43
+    ],
+    "metallic": 0,
+    "roughness": 0.55,
+    "collision": true,
+    "label": "tapered_cup_wall"
+  },
+  {
+    "path": "0001.obj",
+    "color": [
+      0.57,
+      0.54,
+      0.43
+    ],
+    "metallic": 0,
+    "roughness": 0.6,
+    "collision": true,
+    "label": "cup_bottom"
+  },
+  {
+    "path": "0002.obj",
+    "color": [
+      0.84,
+      0.82,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.5,
+    "collision": true,
+    "label": "stepped_takeaway_lid"
+  },
+  {
+    "path": "0003.obj",
+    "color": [
+      0.84,
+      0.82,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.5,
+    "collision": true,
+    "label": "stepped_takeaway_lid"
+  },
+  {
+    "path": "0004.obj",
+    "color": [
+      0.84,
+      0.82,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.5,
+    "collision": true,
+    "label": "stepped_takeaway_lid"
+  }
+]

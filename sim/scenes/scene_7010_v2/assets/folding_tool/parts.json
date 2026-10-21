@@ -1,0 +1,170 @@
+[
+  {
+    "path": "0000.obj",
+    "color": [
+      0.055,
+      0.06,
+      0.055
+    ],
+    "metallic": 0,
+    "roughness": 0.62,
+    "collision": true,
+    "label": "rounded_molded_side_cheek"
+  },
+  {
+    "path": "0001.obj",
+    "color": [
+      0.12,
+      0.42,
+      0.23
+    ],
+    "metallic": 0,
+    "roughness": 0.6,
+    "collision": false,
+    "label": "green_cheek_inlay"
+  },
+  {
+    "path": "0002.obj",
+    "color": [
+      0.055,
+      0.06,
+      0.055
+    ],
+    "metallic": 0,
+    "roughness": 0.62,
+    "collision": true,
+    "label": "rounded_molded_side_cheek"
+  },
+  {
+    "path": "0003.obj",
+    "color": [
+      0.12,
+      0.42,
+      0.23
+    ],
+    "metallic": 0,
+    "roughness": 0.6,
+    "collision": false,
+    "label": "green_cheek_inlay"
+  },
+  {
+    "path": "0004.obj",
+    "color": [
+      0.24,
+      0.26,
+      0.24
+    ],
+    "metallic": 0.85,
+    "roughness": 0.35,
+    "collision": true,
+    "label": "folded_hex_key_1.5mm"
+  },
+  {
+    "path": "0005.obj",
+    "color": [
+      0.24,
+      0.26,
+      0.24
+    ],
+    "metallic": 0.85,
+    "roughness": 0.35,
+    "collision": true,
+    "label": "folded_hex_key_2mm"
+  },
+  {
+    "path": "0006.obj",
+    "color": [
+      0.24,
+      0.26,
+      0.24
+    ],
+    "metallic": 0.85,
+    "roughness": 0.35,
+    "collision": true,
+    "label": "folded_hex_key_2.5mm"
+  },
+  {
+    "path": "0007.obj",
+    "color": [
+      0.24,
+      0.26,
+      0.24
+    ],
+    "metallic": 0.85,
+    "roughness": 0.35,
+    "collision": true,
+    "label": "folded_hex_key_3mm"
+  },
+  {
+    "path": "0008.obj",
+    "color": [
+      0.24,
+      0.26,
+      0.24
+    ],
+    "metallic": 0.85,
+    "roughness": 0.35,
+    "collision": true,
+    "label": "folded_hex_key_4mm"
+  },
+  {
+    "path": "0009.obj",
+    "color": [
+      0.24,
+      0.26,
+      0.24
+    ],
+    "metallic": 0.85,
+    "roughness": 0.35,
+    "collision": true,
+    "label": "folded_hex_key_5mm"
+  },
+  {
+    "path": "0010.obj",
+    "color": [
+      0.24,
+      0.26,
+      0.24
+    ],
+    "metallic": 0.85,
+    "roughness": 0.35,
+    "collision": true,
+    "label": "folded_hex_key_6mm"
+  },
+  {
+    "path": "0011.obj",
+    "color": [
+      0.17,
+      0.19,
+      0.17
+    ],
+    "metallic": 0.8,
+    "roughness": 0.4,
+    "collision": true,
+    "label": "pivot_spindle"
+  },
+  {
+    "path": "0012.obj",
+    "color": [
+      0.17,
+      0.19,
+      0.17
+    ],
+    "metallic": 0.8,
+    "roughness": 0.4,
+    "collision": true,
+    "label": "pivot_spindle"
+  },
+  {
+    "path": "0013.obj",
+    "color": [
+      0.77,
+      0.79,
+      0.74
+    ],
+    "metallic": 0,
+    "roughness": 0.8,
+    "collision": false,
+    "label": "outlined_hex_emblem"
+  }
+]

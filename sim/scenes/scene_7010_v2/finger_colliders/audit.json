@@ -1,0 +1,14 @@
+{
+  "left": {
+    "pieces": 175,
+    "max_vertex_outside_visual_mm": 0.06154806967646126,
+    "preprocess": "off",
+    "threshold": 0.04
+  },
+  "right": {
+    "pieces": 147,
+    "max_vertex_outside_visual_mm": 0.4660970905466244,
+    "preprocess": "off",
+    "threshold": 0.04
+  }
+}

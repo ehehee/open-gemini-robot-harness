@@ -1,0 +1,26 @@
+[
+  {
+    "path": "0000.obj",
+    "color": [
+      0.035,
+      0.13,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.27,
+    "collision": true,
+    "label": "tapered_wall_and_rolled_rim"
+  },
+  {
+    "path": "0001.obj",
+    "color": [
+      0.035,
+      0.13,
+      0.72
+    ],
+    "metallic": 0,
+    "roughness": 0.32,
+    "collision": true,
+    "label": "rounded_floor"
+  }
+]

@@ -1,5 +1,10 @@
 # Both versions (run_human_check.py, run_auto_check.py). The autonomous checker
 # (gap_guard) needs only mujoco, already listed here.
+#
+# Simulation: install RoboSimStudio first (https://github.com/robosimstudio/robosimstudio,
+# its own guide; needs a CUDA GPU), then `pip install -r requirements.txt` into
+# that same environment. The sim backend also uses trimesh, which RoboSimStudio
+# already brings.
 openai>=1.40.0          # Gemini via OpenRouter's OpenAI-compatible API
 pillow>=10.0.0
 pydantic>=2.0.0
