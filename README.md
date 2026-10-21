@@ -7,6 +7,7 @@
 </h3>
 
 <p align="center">
+  <a href="https://ehehee.github.io/blog/open-gemini-harness/"><img src="https://img.shields.io/badge/Case%20study-Read%20the%20report-B31B1B" alt="Read the case study"></a>
   <a href="https://developers.googleblog.com/gemini-4-argon-for-robotics/"><img src="https://img.shields.io/badge/Based%20on-Gemini%204%20Argon%20for%20Robotics-4285F4" alt="Based on Gemini 4 Argon for Robotics"></a>
   <a href="#how-it-works"><img src="https://img.shields.io/badge/Docs-How%20it%20works-FBBC04" alt="How it works"></a>
   <a href="#in-simulation-robosimstudio"><img src="https://img.shields.io/badge/Try%20it-RoboSimStudio%20sim-0F766E" alt="Try it in the RoboSimStudio sim"></a>
@@ -24,8 +25,8 @@ become checked motion, and the prompt that ties them together.
 
 This is an open implementation of the harness in Google's
 [Gemini 4 Argon robotics report](https://developers.googleblog.com/gemini-4-argon-for-robotics/),
-extended to **two arms**. It is the code behind the case study *Open Gemini 4
-Robot Harness: A Zero-Shot Bimanual Handover Case Study*. Each turn works like
+extended to **two arms**. It is the code behind the case study
+[*Open Gemini 4 Argon Robot Harness: A Zero-Shot Bimanual Handover Case Study*](https://ehehee.github.io/blog/open-gemini-harness/). Each turn works like
 this:
 
 * **Observe.** Gemini sees calibrated camera images with a 2 cm world grid
