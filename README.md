@@ -1,14 +1,55 @@
-# Open Gemini Robot Harness
+<h3 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark.png">
+    <img src="assets/wordmark-light.png" alt="Open Gemini Robot Harness" width="420">
+  </picture><br>
+  Zero-shot bimanual manipulation from calibrated images and motion skills
+</h3>
 
-An open implementation of the robot harness described in Google's
+<p align="center">
+  <a href="https://developers.googleblog.com/gemini-4-argon-for-robotics/"><img src="https://img.shields.io/badge/Based%20on-Gemini%204%20Argon%20for%20Robotics-4285F4" alt="Based on Gemini 4 Argon for Robotics"></a>
+  <a href="#how-it-works"><img src="https://img.shields.io/badge/Docs-How%20it%20works-FBBC04" alt="How it works"></a>
+  <a href="#in-simulation-no-hardware"><img src="https://img.shields.io/badge/Try%20it-MuJoCo%20sim%2C%20no%20hardware-0F766E" alt="Try it in sim"></a>
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white" alt="Python 3.12">
+</p>
+
+<p align="center">
+  <img src="assets/clamp-handover.gif" alt="The recorded clamp handover on two YAM arms: the right arm picks up the clamp, moves to the handover pose, the left arm approaches and grasps the handle, the right gripper releases, and the left arm places the clamp in the blue bin and returns home. Played at 2.5 times the speed shown in each caption." width="560">
+  <br><sub>The recorded clamp handover (played at 2.5&times; the speed in each caption).</sub>
+</p>
+
+A **harness** is everything around the model that lets it act on a robot: what
+it sees each turn, how it answers, the skills it can call, how those calls
+become checked motion, and the prompt that ties them together.
+
+This is an open implementation of the harness in Google's
 [Gemini 4 Argon robotics report](https://developers.googleblog.com/gemini-4-argon-for-robotics/),
-extended to two arms. It is the code behind the case study
-**Open Gemini 4 Robot Harness: A Zero-Shot Bimanual Handover Case Study**.
+extended to **two arms**. It is the code behind the case study *Open Gemini 4
+Robot Harness: A Zero-Shot Bimanual Handover Case Study*. Each turn works like
+this:
 
-Gemini sees calibrated camera images with a world grid drawn on them, picks
-targets, and writes short programs of motion skills. The harness turns each
-program into IK-solved motion, checks every segment before it runs, and returns
-a fresh observation after every step.
+* **Observe.** Gemini sees calibrated camera images with a 2 cm world grid
+  and a pinch-point reticle drawn on them, plus each arm's state.
+* **Act.** It replies with a short program of motion skills
+  (`right.grasp(...)`, `left.goto(...)`,
+  `parallel(...)`).
+* **Check and run.** The harness solves IK for every segment and checks it
+  before it runs. It then returns a fresh observation, or a short reason the
+  step was rejected.
+
+<p align="center">
+  <img src="docs/harness-overview.png" alt="The open harness: observation (images, arm state, scene) goes to Gemini with the system prompt; Gemini posts an action program to /plan; skills expand it; the execution layer splits it into moves, solves IK, checks reach and collision, runs them and rereads the measured pose; a fresh observation follows every move, and a rejected step returns IK_FAILURE or COLLISION with nothing moving." width="100%">
+</p>
+
+On the case study's rig (two YAM arms, an overhead ZED-M camera, a D405 on the
+right wrist), Gemini handed over and placed a tape roll and a metal spring clamp
+with no task-specific training or demonstrations. The final clamp run took
+18 model turns. It recovered from five rejected proposals (four IK, one
+collision) using only short feedback, and had no drops.
+
+The release supports **human-checked and automatically checked execution**,
+**both arms in one world frame**, **i2rt's MuJoCo sim and the real rig**, and
+**full run records with an HTML report**.
 
 The harness comes in **two versions**. They differ only in who checks each
 motion before it runs:
@@ -20,7 +61,17 @@ motion before it runs:
 | Used for | All recorded runs in the case study, including the successful clamp handover | Validated in simulation and on the scripted checks in `tests/` |
 | System prompt | Byte-identical to the successful clamp run's prompt | The same prompt, with its two passages about the human operator replaced |
 
-![The open harness: observation, Gemini, action, skills, execution, robot, and back](docs/harness-overview.png)
+## Contents
+
+- [How it works](#how-it-works)
+- [The automatic checker (`gap_guard`)](#the-automatic-checker-gap_guard)
+- [Install](#install)
+- [Run](#run)
+- [What a run records](#what-a-run-records)
+- [Tests](#tests)
+- [Layout](#layout)
+- [Future work](#future-work)
+- [Acknowledgements](#acknowledgements)
 
 ## How it works
 
