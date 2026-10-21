@@ -1,0 +1,140 @@
+{
+  "success": false,
+  "stage": "complete",
+  "transfer": {
+    "left_holding": true,
+    "clamp_drop_on_release_m": 0.0004170536994934082
+  },
+  "placement": {
+    "inside_fraction": 0.9882324973255676,
+    "contact_force_N": 1.4715040251621985,
+    "speed_m_s": 1.7703245206775448e-08,
+    "placed": false
+  },
+  "log": [
+    {
+      "why": "1. Right arm grasps the clamp's rubber sleeve (pose from the mesh)",
+      "program": "right.grasp(x=0.3245, y=0.0482, z=0.0109, yaw_deg=68.5)",
+      "status": "completed",
+      "results": [
+        "[right] gripper -> 1.00",
+        "[right] reached, measured 0.0 mm from plan (gravity sag)",
+        "[right] reached, measured 8.1 mm from plan (gravity sag)",
+        "[right] contact=True, gripper=0.26, holding=True",
+        "[right] reached, measured 0.8 mm from plan (gravity sag)"
+      ]
+    },
+    {
+      "why": "2. Right arm presents the clamp between the arms",
+      "program": "right.goto(x=0.2500, y=0.1354, z=0.1460, speed=0.05)",
+      "status": "completed",
+      "results": [
+        "[right] reached, measured 0.7 mm from plan (gravity sag)"
+      ]
+    },
+    {
+      "why": "3. Left arm lines up with the free handle",
+      "program": "left.goto(x=0.2601, y=0.2349, z=0.1539, pitch_deg=0, azimuth_deg=-70.4, roll_deg=90, speed=0.06)",
+      "status": "completed",
+      "results": [
+        "[left] reached, measured 0.0 mm from plan (gravity sag)"
+      ]
+    },
+    {
+      "why": "4. Left arm slides onto the handle",
+      "program": "left.goto(x=0.2802, y=0.1784, z=0.1539, pitch_deg=0, azimuth_deg=-70.4, roll_deg=90, speed=0.03)",
+      "status": "completed",
+      "results": [
+        "[left] reached, measured 0.0 mm from plan (gravity sag)"
+      ]
+    },
+    {
+      "why": "5. Left gripper closes on the handle",
+      "program": "left.close_gripper()",
+      "status": "completed",
+      "results": [
+        "[left] contact=True, gripper=0.34, holding=True"
+      ]
+    },
+    {
+      "why": "6. Right gripper lets go -- alone, so the result can be checked",
+      "program": "right.open_gripper()",
+      "status": "completed",
+      "results": [
+        "[right] gripper -> 0.99"
+      ]
+    },
+    {
+      "why": "8. Right arm backs away",
+      "program": "right.goto(x=0.2500, y=0.0354, z=0.1860, speed=0.06)",
+      "status": "blocked",
+      "results": [
+        "[right] BLOCKED: stopped 41 mm short of the planned end point -- something is in the way (the other arm, the object, the table). Look again before retrying"
+      ]
+    },
+    {
+      "why": "9. Left arm carries it over the tray (6 cm up, turned to fit)",
+      "program": "left.goto(x=0.4680, y=0.4421, z=0.0593, pitch_deg=0, azimuth_deg=-132.6, roll_deg=90, speed=0.04)",
+      "status": "rejected_by_operator",
+      "results": [
+        "rejected by motion checker: IK_FAILURE"
+      ]
+    },
+    {
+      "why": "9. Left arm carries it over the tray (8 cm up, turned to fit)",
+      "program": "left.goto(x=0.4680, y=0.4421, z=0.0793, pitch_deg=0, azimuth_deg=-132.6, roll_deg=90, speed=0.04)",
+      "status": "rejected_by_operator",
+      "results": [
+        "rejected by motion checker: IK_FAILURE"
+      ]
+    },
+    {
+      "why": "9. Left arm carries it over the tray (10 cm up, turned to fit)",
+      "program": "left.goto(x=0.4680, y=0.4421, z=0.0993, pitch_deg=0, azimuth_deg=-132.6, roll_deg=90, speed=0.04)",
+      "status": "rejected_by_operator",
+      "results": [
+        "rejected by motion checker: IK_FAILURE"
+      ]
+    },
+    {
+      "why": "9. Left arm carries it over the tray (6 cm up, turned to fit)",
+      "program": "left.goto(x=0.3927, y=0.4366, z=0.0593, pitch_deg=0, azimuth_deg=-30.4, roll_deg=90, speed=0.04)",
+      "status": "rejected_by_operator",
+      "results": [
+        "rejected by motion checker: IK_FAILURE"
+      ]
+    },
+    {
+      "why": "9. Left arm carries it over the tray (8 cm up, turned to fit)",
+      "program": "left.goto(x=0.3927, y=0.4366, z=0.0793, pitch_deg=0, azimuth_deg=-30.4, roll_deg=90, speed=0.04)",
+      "status": "rejected_by_operator",
+      "results": [
+        "rejected by motion checker: IK_FAILURE"
+      ]
+    },
+    {
+      "why": "9. Left arm carries it over the tray (10 cm up, turned to fit)",
+      "program": "left.goto(x=0.3927, y=0.4366, z=0.0993, pitch_deg=0, azimuth_deg=-30.4, roll_deg=90, speed=0.04)",
+      "status": "completed",
+      "results": [
+        "[left] reached, measured 0.9 mm from plan (gravity sag)"
+      ]
+    },
+    {
+      "why": "10. Left gripper releases the clamp into the tray",
+      "program": "left.open_gripper()",
+      "status": "completed",
+      "results": [
+        "[left] gripper -> 1.00"
+      ]
+    },
+    {
+      "why": "11. Left arm lifts clear",
+      "program": "left.move_by(dz=0.06, speed=0.05)",
+      "status": "completed",
+      "results": [
+        "[left] reached, measured 0.0 mm from plan (gravity sag)"
+      ]
+    }
+  ]
+}

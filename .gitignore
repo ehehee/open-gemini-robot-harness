@@ -4,3 +4,4 @@ __pycache__/
 .env
 runs/
 third_party/raiden/
+assets/*-1080p.mp4

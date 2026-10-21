@@ -269,7 +269,35 @@ $ python tools/scripted_grasp.py
 
 The grasp pose comes from the sim's ground truth. So this tests everything
 below the model (skills, IK, checking, execution, gripper, contact physics),
-not Gemini's perception. To drive `/plan` yourself without Gemini:
+not Gemini's perception.
+
+**A full handover.** `tools/scripted_handover.py` goes further. The right arm
+picks up the clamp and presents it. The left arm comes in level along the free
+handle and closes on it. The right gripper opens on its own, and the harness
+rechecks the left grip, as the prompt's handover protocol requires. The left
+arm then carries the clamp to the tray and drops it in. Every motion is a
+`/plan` program checked by `gap_guard`, and the clamp moves only through finger
+contact: it is never attached to a gripper or moved directly. It writes a video
+in simulation time:
+
+<p align="center">
+  <a href="assets/sim-clamp-handover.mp4">
+    <img src="assets/sim-clamp-handover.gif" alt="Simulation: the right arm holds the clamp between the arms, the left arm slides onto the free handle and closes, the right gripper opens and backs away, and the left arm carries the clamp toward the blue tray." width="560">
+  </a>
+  <br><sub>The transfer, at 1.5&times; speed. Click for the full 51 s run with the overhead and wrist views and each program and verdict (<a href="assets/sim-clamp-handover.mp4">mp4</a>).</sub>
+</p>
+
+In that run:
+- **Transfer:** after the right gripper let go, the left was holding at 0.34
+  open and the clamp had moved 0.4 mm. Every step that ran passed `gap_guard`.
+- **Placement:** the clamp ended resting in the tray, but with one handle tip on
+  the rim (98.8% of its mesh inside, short of the scene's 99.9% "placed" test).
+  The wrist turn that would line it up with the tray is out of reach, so it lies
+  across the tray's width with almost no margin.
+
+Results are in `assets/sim-clamp-handover.json`.
+
+To drive `/plan` yourself without Gemini:
 
 ```bash
 python run_auto_check.py --serve-only
@@ -360,6 +388,7 @@ yam_control/            i2rt-backed arm driver (FK/IK, streaming, guards), per-a
 viz/                    robot meshes in viser
 config/                 rig.yaml + solved extrinsics of the case-study rig
 tools/scripted_grasp.py a geometry-computed grasp through the harness, verified in physics
+tools/scripted_handover.py  the full bimanual handover through the harness, recorded as video
 tools/run_report.py     HTML report of a run
 ```
 

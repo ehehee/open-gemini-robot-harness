@@ -178,3 +178,169 @@ def scripted_grasp(h: SimHarness, scene_dir: Path, obj: str = "clamp", part: str
     result.update(holding=st.holding, gripper_open=st.gripper, lifted_m=lifted, object_rise_m=rise, hold_s=hold_s,
                   success=bool(out["status"] == "completed" and st.holding and rise > 0.8 * lifted))
     return result
+
+
+# -- handover -----------------------------------------------------------------------------
+def _wrap180(deg: float) -> float:
+    return (deg + 180.0) % 360.0 - 180.0
+
+
+def placement(h: SimHarness, scene_dir: Path, obj: str = "clamp", container: str = "tray") -> dict:
+    """The scene policy's placement test: every vertex of the object inside
+    the container floor's outline, resting on it, and still."""
+    import json
+
+    import trimesh
+    from scipy.spatial.transform import Rotation
+    from shapely.geometry import MultiPoint, Point
+
+    def evaluate():
+        sim = h.hub.sim
+        floor = trimesh.load(scene_dir / "assets" / container / "0001.obj", process=False)
+        interior = MultiPoint(floor.vertices[:, :2]).convex_hull.buffer(-0.001)
+        pose, tp = np.asarray(sim[obj].pose), np.asarray(sim[container].pose)
+        pts = []
+        for part in json.loads((scene_dir / "assets" / obj / "parts.json").read_text()):
+            m = trimesh.load(scene_dir / "assets" / obj / part["path"], process=False)
+            pts.append(Rotation.from_quat(tp[3:]).inv().apply(Rotation.from_quat(pose[3:]).apply(m.vertices)
+                                                               + pose[:3] - tp[:3]))
+        pts = np.concatenate(pts)
+        inside = float(np.mean([interior.covers(Point(p[:2])) for p in pts]))
+        sim.contacts.update(sim.step_count)
+        force = float(np.linalg.norm(sim.contacts.pairwise_force(
+            sim.scene.handles.entity(obj).collision_shapes, sim.scene.handles.entity(container).collision_shapes)))
+        speed = float(np.linalg.norm(sim[obj].velocity[:3]))
+        return {"inside_fraction": inside, "contact_force_N": force, "speed_m_s": speed,
+                "placed": inside >= 0.999 and force > 0.1 and speed < 0.02}
+
+    return h.hub.call(evaluate)
+
+
+def scripted_handover(h: SimHarness, scene_dir: Path, say=print) -> dict:
+    """Right picks the clamp up by its rubber sleeve, presents it, left
+    receives it by the other handle, right lets go (alone, then the receiver
+    is rechecked), left carries it over the tray and lets go. Every motion is
+    a /plan program through the harness, checked by gap_guard. Grasp poses
+    come from the scene's meshes; the handover protocol is the prompt's."""
+    import json
+
+    import trimesh
+    from scipy.spatial.transform import Rotation
+
+    log: list[dict] = []
+
+    def plan(program: str, why: str) -> dict:
+        say(f"{why}\n/plan  {program}")
+        out = h.plan(program)
+        log.append({"why": why, "program": program, "status": out["status"],
+                    "results": [e["result"] for e in out["executed"]]})
+        return out
+
+    def held(side):
+        return h.session.states[side].holding
+
+    def fail(stage):
+        return {"success": False, "stage": stage, "log": log}
+
+    # 1. pick up
+    for program in grasp_programs(h, scene_dir, "clamp", "0008.obj", 0.017):
+        out = plan(program, "1. Right arm grasps the clamp's rubber sleeve (pose from the mesh)")
+        if out["status"] not in ("rejected_by_operator", "plan_error"):
+            break
+    if out["status"] != "completed" or not held("right"):
+        return fail("pick up")
+    meet = h.to_base([0.04, -0.065, 0.14])  # where the scene's own policy presents it
+    if plan(f"right.goto(x={meet[0]:.4f}, y={meet[1]:.4f}, z={meet[2]:.4f}, speed=0.05)",
+            "2. Right arm presents the clamp between the arms")["status"] != "completed":
+        return fail("present")
+
+    # 2. receive by the other handle: horizontal approach along it, jaws closing vertically
+    cw, tw = part_axis(scene_dir, "clamp", "0018.obj", h.hub.object_pose("clamp"))
+    c, a = h.to_base(cw), h.T_base_world[:3, :3] @ tw
+    if a[1] > 0:
+        a = -a  # approach toward -y: the left arm comes from its own side
+    a[2] = 0
+    a /= np.linalg.norm(a)
+    az = math.degrees(math.atan2(a[1], a[0]))
+    site = c + PAD_CENTRE_ABOVE_SITE_M * a
+    pre = site - 0.06 * a
+    o = f"pitch_deg=0, azimuth_deg={az:.1f}, roll_deg=90"
+    if plan(f"left.goto(x={pre[0]:.4f}, y={pre[1]:.4f}, z={pre[2]:.4f}, {o}, speed=0.06)",
+            "3. Left arm lines up with the free handle")["status"] != "completed":
+        return fail("receive approach")
+    if plan(f"left.goto(x={site[0]:.4f}, y={site[1]:.4f}, z={site[2]:.4f}, {o}, speed=0.03)",
+            "4. Left arm slides onto the handle")["status"] != "completed":
+        return fail("receive")
+    if plan("left.close_gripper()", "5. Left gripper closes on the handle")["status"] != "completed" or not held("left"):
+        return fail("receive close")
+
+    # 3. transfer: the giver opens alone, then the receiver must still hold
+    z0 = float(h.hub.object_pose("clamp")[2])
+    plan("right.open_gripper()", "6. Right gripper lets go -- alone, so the result can be checked")
+    h.hub.sleep(1.0)
+    h.session.observe()
+    drop = z0 - float(h.hub.object_pose("clamp")[2])
+    say(f"7. Recheck: left holding={held('left')}, right holding={held('right')}, clamp moved {drop * 1000:.1f} mm")
+    if not held("left") or held("right"):
+        return fail("transfer")
+    transfer = {"left_holding": True, "clamp_drop_on_release_m": drop}
+    back = h.to_base([0.04, -0.165, 0.18])
+    plan(f"right.goto(x={back[0]:.4f}, y={back[1]:.4f}, z={back[2]:.4f}, speed=0.06)", "8. Right arm backs away")
+
+    # 4. place: clamp long axis along the tray's, its bounds centred over the tray
+    root = scene_dir / "assets" / "clamp"
+    V = np.vstack([trimesh.load(root / p["path"], process=False).vertices
+                   for p in json.loads((root / "parts.json").read_text())])
+    mid_local = (V.min(0) + V.max(0)) / 2
+    cp, tp = h.hub.object_pose("clamp"), h.hub.object_pose("tray")
+    yaw_c = math.degrees(Rotation.from_quat(cp[3:]).as_euler("xyz")[2])
+    yaw_t = math.degrees(Rotation.from_quat(tp[3:]).as_euler("xyz")[2])  # tray floor's long side is its local x
+    tcp = h.arms["left"].fk(h.session.states["left"].q_measured)[:3, 3]
+    mid = h.to_base(cp[:3] + Rotation.from_quat(cp[3:]).apply(mid_local))
+    tray = h.to_base(tp[:3])
+    placed_out = None
+    # Turn the wrist (about the vertical through the pinch) to line the clamp
+    # up with the tray, but never by more than 90 deg: a 118 deg turn swung the
+    # cantilevered clamp out of the jaws. Then the smaller turns that reach.
+    aligned = _wrap180(yaw_t - yaw_c)
+    aligned = aligned - 180.0 if aligned > 90 else aligned + 180.0 if aligned <= -90 else aligned
+    for delta in [aligned, 40.0, 20.0, 0.0, -20.0]:
+        d = math.radians(delta)
+        Rz = np.array([[math.cos(d), -math.sin(d), 0], [math.sin(d), math.cos(d), 0], [0, 0, 1]])
+        for height in (0.06, 0.08, 0.10):
+            t = tray + np.array([0, 0, height]) - Rz @ (mid - tcp)
+            placed_out = plan(f"left.goto(x={t[0]:.4f}, y={t[1]:.4f}, z={t[2]:.4f}, pitch_deg=0, "
+                              f"azimuth_deg={_wrap180(az + delta):.1f}, roll_deg=90, speed=0.04)",
+                              f"9. Left arm carries it over the tray ({height * 100:.0f} cm up, turned to fit)")
+            if placed_out["status"] == "completed":
+                break
+        if placed_out["status"] == "completed":
+            break
+    if placed_out["status"] != "completed" or not held("left"):
+        return fail("carry") | {"transfer": transfer}
+    # Ground truth: is the clamp still in the hand? (holding reads the jaws, and
+    # jaws resting at their close setpoint look the same with or without it.)
+    tcp = h.arms["left"].fk(h.session.states["left"].q_measured)[:3, 3]
+    gap = float(np.linalg.norm(h.to_base(h.hub.object_pose("clamp")[:3]) - tcp))
+    say(f"9. Carried: clamp origin {gap * 100:.1f} cm from the left pinch point")
+    if gap > 0.12:
+        return fail("carry: dropped") | {"transfer": transfer}
+    # The jaws close vertically in this grip, so opening swings the lower finger
+    # down: if gap_guard sees it hitting the tray or table, rise a little first.
+    for k in range(4):
+        out = plan("left.open_gripper()", "10. Left gripper releases the clamp into the tray")
+        if out["status"] == "completed":
+            break
+        plan("left.move_by(dz=0.02, speed=0.03)", "10. Release would hit the tray: rise 2 cm first")
+    if held("left"):
+        return fail("release") | {"transfer": transfer}
+    h.hub.sleep(1.5)
+    if plan("left.move_by(dz=0.06, speed=0.05)", "11. Left arm lifts clear")["status"] != "completed":
+        plan("left.home()", "11. Left arm returns home")
+    h.hub.sleep(2.0)
+    h.session.observe()
+    place = placement(h, scene_dir)
+    say(f"12. Placement: {place['inside_fraction'] * 100:.1f}% of the clamp inside the tray, "
+        f"{place['contact_force_N']:.2f} N on it, {'PLACED' if place['placed'] else 'NOT fully placed'}")
+    return {"success": bool(place["placed"]), "stage": "complete", "transfer": transfer, "placement": place,
+            "log": log}

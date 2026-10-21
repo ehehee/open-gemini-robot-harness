@@ -154,6 +154,9 @@ class RssSim:
         self._cmd_lock = threading.Lock()
         self._renderers: dict = {}
         self.snap: dict = {}
+        self.video: SimVideo | None = None
+        self.caption = ""  # drawn under the video frames
+        self._steps = 0
         self._publish()
 
     def _hold_command(self) -> np.ndarray:
@@ -283,6 +286,19 @@ class RssSim:
     def render(self, name: str) -> dict:
         return self.call(lambda: self.frame(name))
 
+    def start_video(self, path: Path, fps: float = 10.0, main: str = "phone") -> None:
+        """Record from now on, in sim time: the `main` camera large, the
+        overhead and right-wrist views beside it, `caption` underneath."""
+        self.call(lambda: setattr(self, "video", SimVideo(self, path, fps, main)))
+
+    def stop_video(self) -> Path | None:
+        def stop():
+            v, self.video = self.video, None
+            if v is not None:
+                v.close()
+            return None if v is None else v.path
+        return self.call(stop)
+
     def object_pose(self, name: str) -> np.ndarray:
         """World pose (x, y, z, qx, qy, qz, qw) of a named scene body."""
         return self.call(lambda: np.asarray(self.sim[name].pose, dtype=float))
@@ -331,10 +347,57 @@ class RssSim:
             with self._cmd_lock:
                 action = self.cmd.astype(np.float32)
             self.sim.step(action, mode="joint_position")
+            self._steps += 1
+            if self.video is not None:
+                self.video.capture(self._steps)
             with self.cond:
                 self.t += self.dt
                 self._publish()
                 self.cond.notify_all()
+
+
+class SimVideo:
+    """An mp4 of the sim in sim time (one frame every 1/fps sim seconds)."""
+
+    def __init__(self, hub: RssSim, path: Path, fps: float, main: str):
+        import imageio
+        from PIL import ImageFont
+
+        self.hub, self.path = hub, Path(path)
+        self.every = max(1, int(round(1.0 / (fps * hub.dt))))
+        self.writer = imageio.get_writer(str(self.path), fps=fps, codec="libx264", quality=7, macro_block_size=8)
+        self.main = main if main in hub.cams else OVERHEAD
+        self.side = [n for n in (OVERHEAD, WRIST) if n in hub.cams and n != self.main]
+        try:
+            self.font = ImageFont.truetype("DejaVuSans.ttf", 24)
+            self.small = ImageFont.truetype("DejaVuSans.ttf", 18)
+        except OSError:
+            self.font = self.small = ImageFont.load_default()
+
+    def _rgb(self, name, size):
+        from PIL import Image
+
+        return Image.fromarray(np.asarray(self.hub.frame(name)["rgb"])[..., :3].astype(np.uint8)).resize(size)
+
+    def capture(self, step: int) -> None:
+        if step % self.every:
+            return
+        from PIL import Image, ImageDraw
+
+        canvas = Image.new("RGB", (1920, 1080), (18, 18, 20))
+        canvas.paste(self._rgb(self.main, (1280, 720)), (0, 0))
+        for k, name in enumerate(self.side[:2]):
+            canvas.paste(self._rgb(name, (640, 360)), (1280, 360 * k))
+        d = ImageDraw.Draw(canvas)
+        for k, name in enumerate([self.main] + self.side[:2]):
+            d.text((12, 10) if k == 0 else (1292, 10 + 360 * (k - 1)), name, fill=(255, 230, 0), font=self.small)
+        d.text((24, 736), f"sim t = {self.hub.t:6.1f} s", fill=(170, 170, 170), font=self.small)
+        for i, line in enumerate(self.hub.caption.splitlines()[:10]):
+            d.text((24, 770 + 30 * i), line, fill=(235, 235, 235), font=self.font)
+        self.writer.append_data(np.asarray(canvas))
+
+    def close(self) -> None:
+        self.writer.close()
 
 
 def start(scene_path: Path, config_src: Path, config_dst: Path) -> tuple[RssSim, threading.Event]:
