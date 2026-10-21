@@ -254,14 +254,39 @@ config/                 rig.yaml + solved extrinsics of the case-study rig
 tools/run_report.py     HTML report of a run
 ```
 
-## Limits
+## Future work
 
-This is one rig and a handful of episodes. The case study has one successful
-final clamp episode and a six-run development series in which the harness
-changed between runs. That shows the approach can work, but it is not a success
-rate. The automatic checker has been validated in simulation, not in recorded
-real-robot episodes. Test on a stand with an e-stop in reach before anything
-runs near a real workspace.
+- **Adjust the context window.** Today every turn is appended to the
+  conversation. Only images are pruned: frames older than the last few turns
+  are replaced by a placeholder (`GeminiAgent._trim_images`). On long episodes
+  the text history keeps growing, and with it latency and cost. Options to
+  try:
+  - summarising earlier turns into a short task-state note;
+  - keeping only the last N turns plus the plan;
+  - tuning how many turns keep their images.
+- **Add more tasks.** The case study covers bimanual handover and placement.
+  Natural next ones:
+  - tool use, such as passing a tool and then using it;
+  - reorienting objects, such as uprighting a mug;
+  - longer pick-and-place sequences;
+  - tasks where one arm holds a part while the other works on it.
+
+  Each mainly needs prompt rules, as the handover protocol did, and sometimes
+  a new skill.
+- **Evaluate repeatability.** Fix the harness, repeat each object from varied
+  starting poses, and report these separately: transfer success, final
+  placement, drops, rejected motions and wall-clock time.
+- **Reduce latency.** Median model response was 13 s against a 10 s budget.
+  Cutting unnecessary observation turns, using smaller images, or streaming
+  the reply would shorten episodes more than faster arm motion would.
+- **Strengthen the automatic checker.**
+  - Model the held object.
+  - Add the left wrist camera's geometry.
+  - Validate `run_auto_check.py` on recorded real-robot episodes, not only in
+    simulation.
+- **Port to other rigs.** Move the remaining YAM-specific pieces (i2rt
+  driver, gripper model, camera wrappers) behind small interfaces so another
+  arm or camera setup needs only a new backend and `config/`.
 
 ## Acknowledgements
 
